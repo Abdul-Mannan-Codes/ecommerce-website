@@ -1,0 +1,21 @@
+ /* .flex-container{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    /* height: ; */
+ 
+ .icon-list{
+    list-style-type: none;
+    width:130px;
+ }
+ .navbar{
+    list-style-type: none;
+    margin: auto;
+    /* justify-content: center; */
+ }
+ .background-property{
+    background-color: rgb(175, 255, 255);
+    background-position: center;
+    background-size: cover;
+ }
