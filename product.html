@@ -1,193 +1,251 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="product.css">
 </head>
-  <body>
-<<<<<<< HEAD
-    <div class="path">
-      <a href="index.html">Home</a>/Shop
-    </div>
-    <section id="categories">
-      <div class="container d-flex justify-content-between">
-        <div class="filter-container">
-          <div clss="gender-container">
-            <h5 class="category-title">CATEGORIES</h5>
-            <div class="gender-category d-flex justify-content-between">
-              <a href="product.html"><h6 class="gender-name">Men</h6>
-            </div>
-            <div class="gender-category d-flex justify-content-between">
-              <h6 class="gender-name">Women</h6>
-            </div>
-            <div class="gender-category d-flex justify-content-between">
-              <h6 class="gender-name">Children</h6></a>
-            </div>
-          </div>
-          <div class="filter-by-price">
-            <h5>FILTER BY PRICE</h5>
-            <div class="filter-by d-flex justify-content-between">
-              <h5>SIZE</h5>
-            </div>
-            <div class="filter-by d-flex justify-content-between">
-              <input type="checkbox" name="size" id="small">
-              <h6>SMALL (2,319)</h6>
-            </div>
-          <div class="filter-by d-flex justify-content-between">
-            <input type="checkbox" name="size" id="medium">
-            <h6>MEDIUM (1,282)</h6>
-          </div>
-          <div class="filter-by d-flex justify-content-between">
-            <input type="checkbox" name="size" id="large">
-            <h6>LARGE (1,392)</h6>
-          </div>
 
-          <h5>COLOR</h5>
-            <div class="color d-flex justify-content-between">
-              <h6>Red (2,429)</h6>
+<body>
+  <div class="path px-5 py-3">
+    <a href="index.html"> Home</a> &nbsp; / &nbsp; Shop
+  </div>
+  <section id="cat-section">
+    <div class="container d-flex ps-0 mt-5">
+      <!--Filter div start-->
+      <div class="filter-container d-flex flex-column">
+        <div class="categories-gender px-3 py-3 mb-4">
+          <h6 class="sub-head mb-4 text-uppercase">categories</h6>
+          <div class="genders">
+            <div class="gender-item d-flex justify-content-between">
+              <a href="#" class="fs-6 text-decoration-none"> Men </a>
+              <span class="fs-6">(2,220)</span>
             </div>
-            <div class="color d-flex justify-content-between">
-             <h6>Green (2,298)</h6>
+            <div class="gender-item d-flex justify-content-between">
+              <a href="#" class="fs-6 text-decoration-none"> Women </a>
+              <span class="fs-6">(2,550)</span>
             </div>
-          <div class="color d-flex justify-content-between">
-            <h6>Blue (1,075)</h6>
-          </div>
-          <div class="color d-flex justify-content-between">
-            <h6>Purple  (1,075)</h6>
+            <div class="gender-item d-flex justify-content-between">
+              <a href="#" class="fs-6 text-decoration-none"> Children </a>
+              <span class="fs-6">(2,124)</span>
+            </div>
           </div>
         </div>
-        <div class="gridpage">
-          <div class="categories-head container">
-            <div class="header-btns d-flex">
-              <button type="button" class="btn btn-secondary me-3" id="men"> <i class="fa-solid fa-language"></i>LATEST <i class="fa-solid fa-caret-down"></i></button>
-              <button id="women" class="btn btn-secondary p-2 d-none"><i class="fa-solid fa-language"></i> Men </button>
-            </div>
-            <div class="header-btns d-flex">
-              <button type="button" class="btn btn-secondary me-3" id="men"> <i class="fa-solid fa-language"></i>REFERENCE <i class="fa-solid fa-caret-down"></i></button>
-              <button id="women" class="btn btn-secondary p-2 d-none"><i class="fa-solid fa-language"></i> Men</button>
+        <div class="filter-more px-3 py-3 border border-1 rounded">
+          <div class="filter-by-price mb-4">
+            <h6 class="text-uppercase mb-2">filter by price</h6>
+            <input type="range" class="form-range" min="0" max="500" id="customRange1" value="0">
+            <span id="rangeText"> $0 - $0 </span>
+          </div>
+          <div class="filter-by-size mb-4">
+            <h6 class="text-uppercase mb-3">size</h6>
+            <div class="size-inputs">
+              <div class="size-input-item mb-2">
+                <input type="checkbox" name="size" id="small">
+                <label for="small"> Small (2,319)</label>
+              </div>
+              <div class="size-input-item mb-2">
+                <input type="checkbox" name="size" id="medium">
+                <label for="medium"> Medium (1,282)</label>
+              </div>
+              <div class="size-input-item">
+                <input type="checkbox" name="size" id="large">
+                <label for="large"> Large (1,392)</label>
+              </div>
             </div>
           </div>
-          <!-- products -->
-        <!-- row 1 -->
-          <div class="product-grid container">
-            <div class="row my-3 border">
-              <div class="col-lg-4">
-                <img src="product-img/trunk.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">TANK TOP</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <img src="product-img/shoes.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Corater</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <img src="product-img/t-shirt.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Polo Shirt</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
+          <div class="filter-by-color">
+            <h6 class="text-uppercase mb-4">color</h6>
+            <div class="colors">
+              <ul class="color-list">
+                <li><i class="fa-solid fa-circle" style="color: #fa4b4b;"></i> <a href="#">Red (2,429) </a></li>
+                <li><i class="fa-solid fa-circle" style="color: #40c952;"></i> <a href="#">Green (2,298) </a></li>
+                <li><i class="fa-solid fa-circle" style="color: #4485e7;"></i> <a href="#">Blue (1,075) </a></li>
+                <li><i class="fa-solid fa-circle" style="color: #a746e7;"></i> <a href="#">Purple (1,075) </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+           <!--Filter div end-->
+      <div class="grid-container ms-5 pt-1">
+        <div class="grid-header d-flex justify-content-between">
+          <div class="head-name">
+            <h5>Shop All</h5>
+          </div>
+          <div class="drop-btns d-flex justify-content-between">
+            <div class="dropdown">
+              <button class="btn btn-secondary p-3 dropdown-toggle text-uppercase fs-6" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="latest">
+                Latest
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Men</a></li>
+                <li><a class="dropdown-item" href="#">Women</a></li>
+                <li><a class="dropdown-item" href="#">Children</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary p-3 dropdown-toggle text-uppercase fs-6" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="reference">
+                Reference
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Relevance</a></li>
+                <li><a class="dropdown-item" href="#">Name, A to Z</a></li>
+                <li><a class="dropdown-item" href="#">Name, Z to A</a></li>
+                <hr>
+                <li><a class="dropdown-item" href="#">Price,low to high</a></li>
+                <li><a class="dropdown-item" href="#">Price,hight to low</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!--Grid header ends-->
+        <!--Products Grid Start-->
+        <div class="product-grid container">
+          <!-- row 1 -->
+          <div class="row my-3">
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/trunk.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Tank Top</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
               </div>
             </div>
-            <!-- row 2 -->
-            <div class="row my-3">
-              <div class="col-lg-4">
-                <img src="product-img/t-star.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">T-Shirt Mockup</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <img src="product-img/shoes.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Shoes</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <img src="product-img/trunk.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Tank Top</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/shoes.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Corater</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
               </div>
             </div>
-             <!-- row 3 -->
-            <div class="row my-3">
-              <div class="col-lg-4">
-                <img src="product-img/shoes.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Corater</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <img src="product-img/t-shirt.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Polo Shirt</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <img src="product-img/t-star.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">T-Shirt Mockup</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/t-shirt.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Polo Shirt</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
               </div>
             </div>
-            <!-- row 4 -->
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="product-img/shoes.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Corater</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
+          </div>
+          <!-- row 2 -->
+          <div class="row my-3">
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/t-star.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">T-Shirt Mockup</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
               </div>
-              <div class="col-lg-4">
-                <img src="product-img/trunk.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Tank Top</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/shoes.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Shoes</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
               </div>
-              <div class="col-lg-4">
-                <img src="product-img/t-shirt.jpg" alt="">
-                <div class="product-name">
-                  <a href="product.html"><h5 class="justify-content-between">Polo Shirt</h5></a>
-                  <h6 class="justify-content-between">Finding perfect t-shirt</h6>
-                  <h6 class="justify-content-between">$50</h6>
-                </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/trunk.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Tank Top</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
+              </div>
+            </div>
+          </div>
+          <!-- row 3 -->
+          <div class="row my-3">
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/shoes.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Corater</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/t-shirt.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Polo Shirt</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/t-star.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">T-Shirt Mockup</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
+              </div>
+            </div>
+          </div>
+          <!-- row 4 -->
+          <div class="row">
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/shoes.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Corater</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/trunk.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Tank Top</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-2 col-12 product-item">
+              <img src="product-img/t-shirt.jpg" alt="">
+              <div class="product-name my-5">
+                <a href="product.html">
+                  <h5 class="justify-content-between">Polo Shirt</h5>
+                </a>
+                <h6 class="justify-content-between">Finding perfect t-shirt</h6>
+                <h6 class="justify-content-between">$50</h6>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-=======
-   
-    
->>>>>>> b69610594b71004a732606f987359b424a6d79e7
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="product.js"></script>
+</body>
+
 </html>

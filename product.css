@@ -1,3 +1,77 @@
+:root{
+    --font1:"Mukta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --indigo:#8250f8;
+    --dark:black;
+    --dark2:#303030;
+    --dark-white:#e6dfdf;
+    --lightwhite:#f3f3f3;
+    --subtitle-size:15px;
+    --secondary:#696868;
+}
+body{
+    font-family: var(--font1);
+}
+a{
+    color:var(--indigo);
+    text-decoration: none;
+}
+.path{
+    background-color: var(--lightwhite);
+    font-family: var(--font);
+    font-size:var(--subtitle-size);
+}
+.filter-container{
+    width:20%;
+}
+.categories-gender{
+    width:100%;
+}
+ul{
+    list-style: none;
+    padding-left:0px;
+    a{
+        color:var(--dark);
+    }
+}
+.btn-secondary{
+    background-color: var(--dark-white) !important; 
+    border:none;
+    color:var(--dark);
+    font-size:14px !important; 
+    padding:10px 20px !important;
+    margin-top:3px;
+    border-radius: 5px !important;
+}
+.dark-btn{
+    background-color: var(--dark2) !important;
+    color:var(--lightwhite) !important;
+}
+.dark-btn:hover{
+    color:var(--lightwhite) !important;
+    box-shadow:1px 1px 10px var(--dark2);
+    margin-top:0px;
+}
+.btn-secondary:hover{
+    color:var(--dark) !important;
+    box-shadow:1px 1px 10px var(--dark2);
+    margin-top:0px;
+}
+.drop-btns{
+    width:28%;
+}
+.grid-container{
+    width:100%;
+    text-align: center;
+    h5{
+        font-weight: light;
+    }
+}
 .product-grid img{
-    width:250px;
+    width:100%;
+}
+.product-item{
+    border:1px solid var(--dark-white);
+    border-radius: 5px;
+    width:30%;
+    margin:auto 10px;
 }
