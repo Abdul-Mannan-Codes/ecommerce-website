@@ -75,3 +75,9 @@ ul{
     width:30%;
     margin:auto 10px;
 }
+.product-name{
+    margin:20px auto;
+}
+.row>*{
+    padding:0px !important;
+}
