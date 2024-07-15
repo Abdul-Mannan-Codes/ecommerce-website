@@ -85,3 +85,13 @@ ul{
     /* grid-gap:2px !important; */
     padding-right:0px;
 }
+.page-item{
+    border-radius:50%;
+    height:35px;
+    width:35px;
+    padding:auto;
+}
+.page1{
+    background-color: var(--indigo);
+    color:var(--lightwhite);
+}
