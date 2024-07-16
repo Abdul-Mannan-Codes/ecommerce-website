@@ -28,3 +28,14 @@ referenceBtn.addEventListener('click', ()=> {
         toggleBtn2 = true;
     }
 });
+let tog = document.querySelector('#toggle');
+let theme= 'white';
+let color = document.querySelector(':root');
+tog.addEventListener('click',()=> {
+    if(theme=='white'){
+        color.style.setProperty('--dark', 'white');
+        color.style.setProperty('--dark2', '#f3f3f3');
+        color.style.setProperty('--white', 'black');
+        document.body.style.backgroundColor = 'var(--white)';
+    }
+});

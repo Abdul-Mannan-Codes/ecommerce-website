@@ -3,7 +3,7 @@
     --indigo:#8250f8;
     --dark:black;
     --dark2:#303030;
-    --dark-white:#e6dfdf;
+    --dark-white:#eeeeee;
     --lightwhite:#f3f3f3;
     --subtitle-size:15px;
     --secondary:#696868;
@@ -82,14 +82,18 @@ ul{
     padding:0px !important;
 }
 .row{
-    /* grid-gap:2px !important; */
+    grid-gap:2px !important;
     padding-right:0px;
 }
 .page-item{
     border-radius:50%;
-    height:35px;
-    width:35px;
-    padding:auto;
+    height:37px;
+    width:37px;
+    color:var(--indigo);
+}
+.page-item:hover{
+    background-color: var(--indigo);
+    color:var(--lightwhite);
 }
 .page1{
     background-color: var(--indigo);
