@@ -99,3 +99,42 @@ ul{
     background-color: var(--indigo);
     color:var(--lightwhite);
 }
+.fs-7{
+    font-size:12px;
+}
+.collection-grid .row{
+    gap:30px !important;
+}
+.collection-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 30%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.collection-item:hover{
+    background-size: 115%;
+}
+.col-item-1{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url('product-img/women.jpg');
+}
+.col-item-2{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url('product-img/men.jpg');
+}
+.col-item-3{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0)), url('product-img/children.jpg');
+}
+.collection-name {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+.collection-hr{
+    border: none;
+    height: 3px;
+    background-color: #2f00ff;
+    width: 40px;
+    margin-left:150px;
+}
