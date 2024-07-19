@@ -138,3 +138,14 @@ ul{
     width: 40px;
     margin-left:150px;
 }
+.navigations{
+    width:60%;
+}
+.list{
+    width:170px;
+}
+.promo-div{
+    img{
+        width:250px;
+    }
+}
